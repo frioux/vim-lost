@@ -1,5 +1,10 @@
 Changelog for lost-vim
 
+- Next Release
+
+  * Added [gL and ]gL mappings to move up and down to the first lines of
+    lost-contexts
+
 - 1.0 2017-05-16 12:12 Los Angeles
 
   * Added a way to change the regex used (Good idea Léonard Messier!)
