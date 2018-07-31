@@ -5,6 +5,17 @@ chunk of code.  While we should try to avoid having huge functions or huge
 classes or huge blobs of code, they will likely exist forever and I aim to make
 working with them less painful.
 
+## Usage
+
+* `:Lost`
+  * Display the lost-context of the current line in the command-line
+
+| Mode          | Key Mapping | Description                                     |
+| ------------- | ----------- | ----------------------------------------------- |
+| normal        | gL          | call :Lost                                      |
+| normal/visual | ]gL         | Go up to first line in the current lost-context |
+| normal/visual | [gL         | Go down to first line in the next lost-context  |
+
 ## Example
 
 Imagine you have the following code block, and the cursor is where the `|` is:
@@ -17,8 +28,8 @@ sub foo {
 }
 ```
 
-If you run the `:Lost` command you will see `sub foo {` at the bottom of your
-vim window.  Nice!
+If you run the `:Lost` command you will see `sub foo {` in the command-line at
+the bottom of your Vim window.  Nice!
 
 [![Here's an asciinema demo](https://asciinema.org/a/2b64vpw1pmx3fl94ly1q4kyi8.png)](https://asciinema.org/a/2b64vpw1pmx3fl94ly1q4kyi8)
 

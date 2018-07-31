@@ -4,8 +4,8 @@ License: Same terms as Vim itself (see |license|)
 
 INTRODUCTION                                    *lost*
 
-Lost provides a single command, |lost-:Lost|, to help you orient yourself in
-large sections of code.
+Lost provides a single command, |lost-:Lost|, and the mappings |lost-[gL| and
+|lost-]gL| to help you orient yourself in large sections of code.
 
 Context                                         *lost-context*
 
@@ -18,7 +18,8 @@ I've ever written.  I hope it works just as well for you!
 COMMANDS                                        *lost-commands*
 
                                                 *lost-:Lost*
-:Lost                   |:echom| the |lost-context| of the current line.
+:Lost                   Display the |lost-context| of the current line in the
+                        command-line
 
 FUNCTIONS                                       *lost-functions*
 
@@ -29,6 +30,13 @@ MAPPINGS                                        *lost-mappings*
 
                                                 *lost-gL*
 gL                      call |lost-:Lost|
+
+                                                *lost-[gL* *lost-[v_gL*
+|[gL|                     Go up to first line in the current |lost-context|
+
+                                                *lost-]gL* *lost-]v_gL*
+|]gL|                     Go down to first line in the next |lost-context|
+
 
 SETTINGS                                        *lost-settings*
 
