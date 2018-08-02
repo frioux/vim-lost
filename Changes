@@ -1,9 +1,9 @@
 Changelog for lost-vim
 
-- Next Release
+- 1.1 2018-07-01 20:31 Los Angeles
 
   * Added [gL and ]gL mappings to move up and down to the first lines of
-    lost-contexts
+    lost-contexts (Thanks Ryan Carney!)
 
 - 1.0 2017-05-16 12:12 Los Angeles
 
